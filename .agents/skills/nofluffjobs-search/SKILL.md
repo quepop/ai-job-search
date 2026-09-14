@@ -9,10 +9,10 @@ description: >
   for city, category and seniority. Trigger phrases (English): find a job in
   Poland, Polish job board, No Fluff Jobs, nofluffjobs, IT jobs Poland, B2B rates
   Poland, remote developer jobs Poland, "are there any <tech role> jobs in
-  Warsaw/Kraków/Wrocław", look up this No Fluff Jobs offer. Trigger phrases
-  (Polish): oferty pracy IT, praca zdalna programista, praca B2B, stawka
-  godzinowa, widełki płacowe, oferty pracy Warszawa, praca dla programisty
-  PHP/Pythona, ogłoszenia o pracę.
+  <city in Poland>", look up this No Fluff Jobs offer. Trigger phrases
+  (Polish and English): oferty pracy IT, praca zdalna programista, praca B2B, stawka
+  godzinowa, widełki płacowe, praca IT/programista: uczenie maszynowe, machine learning, machine learning research, backend;
+  w technologiach: node.js, python, pytorch, tensorflow, data science, computer vision.
 context: fork
 enabled: true  # set to false to keep this portal installed but have /scrape skip it
 allowed-tools: Bash(bun run .agents/skills/nofluffjobs-search/cli/src/cli.ts *)

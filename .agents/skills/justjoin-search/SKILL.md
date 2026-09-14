@@ -9,10 +9,10 @@ description: >
   result carries its B2B or permanent salary band, because justjoin requires
   employers to publish one. Trigger phrases (English): find a job in Poland, Polish
   job board, justjoin, IT jobs Poland, B2B contract Poland, remote developer jobs
-  Poland, "are there any <tech role> jobs in Warsaw/Kraków/Wrocław", look up this
-  justjoin offer. Trigger phrases (Polish): oferty pracy IT, praca zdalna
-  programista, szukam pracy, praca B2B, stawka godzinowa, oferty pracy Warszawa,
-  praca dla programisty PHP/Pythona, ogłoszenia o pracę.
+  Poland, "are there any <tech role> jobs in <city in Poland>", look up this
+  justjoin offer. Trigger phrases (Polish and English): oferty pracy IT, praca zdalna programista, praca B2B, stawka
+  godzinowa, widełki płacowe, Praca praca IT/programista: uczenie maszynowe, machine learning, machine learning research, backend;
+  w technologiach: node.js, python, pytorch, tensorflow, data science, computer vision.
 context: fork
 enabled: true  # set to false to keep this portal installed but have /scrape skip it
 allowed-tools: Bash(bun run .agents/skills/justjoin-search/cli/src/cli.ts *)
